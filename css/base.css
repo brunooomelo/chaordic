@@ -1,0 +1,236 @@
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body, html {
+  background-color: #fff; }
+
+.header {
+  display: block; }
+  .header .logo {
+    text-align: center;
+    margin: 10px 0 2px 0; }
+  .header .banner {
+    height: 100%;
+    background-image: url("../img/background-home.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 300px; }
+    .header .banner .banner-wrapper {
+      margin: 0 auto;
+      text-align: center;
+      width: 50%; }
+      .header .banner .banner-wrapper h1 {
+        font-weight: 900;
+        font-size: 31px;
+        font-family: "Roboto Slab", serif;
+        color: #EEE;
+        margin-bottom: 5px; }
+      .header .banner .banner-wrapper p {
+        font-weight: 300;
+        font-size: 14px;
+        font-family: "Roboto", serif;
+        color: #EEE;
+        width: 390px;
+        margin: 0 auto;
+        padding-bottom: 30px; }
+      .header .banner .banner-wrapper .buttons-wrapper {
+        width: 430px;
+        margin: 0 auto; }
+        .header .banner .banner-wrapper .buttons-wrapper .close {
+          top: -48px;
+          right: -120px; }
+        .header .banner .banner-wrapper .buttons-wrapper input[type="text"] {
+          width: 65%;
+          border-style: none;
+          background: none;
+          padding: 10px;
+          margin-right: 10px;
+          border-bottom: 2px solid #e67e22;
+          font-weight: 700;
+          font-size: 15px;
+          font-family: "Roboto", serif;
+          color: #e67e22; }
+          .header .banner .banner-wrapper .buttons-wrapper input[type="text"]::-webkit-text-cancel-button {
+            position: relative;
+            right: 20px; }
+          .header .banner .banner-wrapper .buttons-wrapper input[type="text"]::-webkit-input-placeholder {
+            color: #e67e22; }
+          .header .banner .banner-wrapper .buttons-wrapper input[type="text"]:focus {
+            outline: none; }
+        .header .banner .banner-wrapper .buttons-wrapper #close {
+          float: right; }
+        .header .banner .banner-wrapper .buttons-wrapper button {
+          padding: 10px;
+          border-style: none;
+          background: #e67e22;
+          font-weight: 700;
+          font-size: 18px;
+          font-family: "Roboto", serif;
+          color: #EEE;
+          cursor: pointer; }
+        .header .banner .banner-wrapper .buttons-wrapper .color {
+          color: #fff !important; }
+        .header .banner .banner-wrapper .buttons-wrapper .close {
+          position: relative;
+          top: -1px;
+          left: -30px;
+          font-size: 1.2rem;
+          color: #fff;
+          text-decoration: none;
+          font-family: "Roboto", serif; }
+
+.container {
+  padding: 100px; }
+  .container h1 {
+    margin-bottom: 30px; }
+  .container ul {
+    text-decoration: none;
+    list-style: none;
+    margin: 0 auto;
+    width: 600px; }
+    .container ul li {
+      text-align: left;
+      padding: 4px;
+      border-bottom: 1px solid rgba(189, 195, 199, 0.4); }
+      .container ul li .count-click {
+        float: right;
+        font-weight: 500;
+        font-size: 20px;
+        font-family: "Roboto", serif;
+        color: #777; }
+      .container ul li a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 20px;
+        font-family: "Roboto", serif;
+        color: #AA1423; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px; }
+  .wrapper .title {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: "Roboto Slab", serif;
+    color: #AA1423;
+    text-align: center; }
+
+.hit-box {
+  width: 100%;
+  background-color: #EEE;
+  padding: 100px;
+  position: relative; }
+  .hit-box::before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    content: "";
+    top: 0px;
+    left: calc((100% - 100px) / 2);
+    border-style: solid;
+    border-width: 50px;
+    border-color: #fff transparent transparent transparent; }
+  .hit-box .box-click {
+    text-align: center;
+    margin: 20px; }
+    .hit-box .box-click label {
+      padding: 10px;
+      background: #fff;
+      border-radius: 5px;
+      border: 1px solid rgba(189, 195, 199, 0.6);
+      font-weight: 500;
+      font-size: 30px;
+      font-family: "Roboto", serif;
+      color: #AA1423; }
+    .hit-box .box-click p {
+      font-weight: 500;
+      font-size: 15px;
+      font-family: "Roboto", serif;
+      color: #777;
+      margin: 20px; }
+
+.footer {
+  width: 100%;
+  padding: 10px; }
+  .footer span {
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Roboto", serif;
+    color: #AA1423;
+    float: left; }
+  .footer .media-social {
+    float: right; }
+    .footer .media-social a {
+      margin: 2px; }
+
+@media screen and (min-width: 300px) and (max-width: 479px) {
+  .header .banner {
+    max-width: 100% !important;
+    padding: 1em;
+    background-position: center;
+    background-size: cover; }
+    .header .banner h1 {
+      font-weight: 900;
+      font-size: 20px !important;
+      font-family: "Roboto Slab", serif;
+      color: #EEE; }
+    .header .banner p {
+      font-weight: 300;
+      font-size: 12px !important;
+      font-family: "Roboto", serif;
+      color: #EEE;
+      width: 100% !important;
+      margin: 0 auto;
+      padding-bottom: 30px; }
+    .header .banner .buttons-wrapper {
+      width: 100% !important; }
+      .header .banner .buttons-wrapper .close {
+        top: -45px !important;
+        left: 130px !important; }
+      .header .banner .buttons-wrapper input[type="text"] {
+        width: 100% !important;
+        margin-bottom: 15px; }
+      .header .banner .buttons-wrapper button {
+        width: 100% !important; }
+  .header .banner-wrapper {
+    width: 100% !important; }
+  .container {
+    padding: 20px 0 30px 0; }
+    .container ul {
+      width: 100%; }
+  .wrapper {
+    width: 90% !important; }
+  .hit-box {
+    padding: 20px 0; }
+    .hit-box::before {
+      left: calc((100% - 40px) / 2);
+      border-width: 20px; } }
+
+@media screen and (min-width: 480px) and (max-width: 639px) {
+  .header .banner {
+    max-width: 100%;
+    padding: 3em; }
+  .header .banner-wrapper {
+    width: 100% !important; }
+  .container ul {
+    width: 100%; } }
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .header .banner {
+    max-width: 100%;
+    padding: 8em; }
+  .header .banner-wrapper {
+    width: 100% !important; }
+  .container ul {
+    width: 100%; } }
+
+@media screen and (min-width: 1024px) and (max-width: 1450px) {
+  .header .banner {
+    max-width: 100%;
+    padding: 10em; }
+  .header .banner-wrapper {
+    width: 100% !important; } }

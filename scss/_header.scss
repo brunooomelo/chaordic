@@ -1,0 +1,92 @@
+@import 'mixins';
+@import 'variables';
+
+*,
+*:after,
+*:before{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+}
+body,html{
+	background-color: #fff;
+}
+
+.header{
+	display: block;
+	.logo{
+		text-align: center;
+		margin:10px 0 2px 0;
+	}
+	.banner{
+		height:100%;
+		background-image:url('../img/background-home.jpg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		padding: 300px;
+		.banner-wrapper{
+			margin: 0 auto;
+			text-align: center;
+			width: 50%;
+			h1{
+				@include fonts($slab,31px, 900, $background);
+				margin-bottom: 5px;
+			}
+			p{
+				@include fonts($roboto,14px, 300, $background);
+				width:390px;
+				margin: 0 auto;
+				padding-bottom: 30px;
+			}
+			.buttons-wrapper{
+				width: 430px;
+				margin: 0 auto
+				.close{
+					top:-48px;
+					right: -120px;
+				}
+				input[type="text"]{
+					width: 65%;	
+					border-style: none;
+					background: none;
+					padding: 10px;
+					margin-right: 10px;
+					border-bottom: 2px solid $buttons;
+					@include fonts($roboto,15px, 700, $buttons);
+					&::-webkit-text-cancel-button{
+						position:relative;
+						right:20px;    
+					}
+					&::-webkit-input-placeholder{
+						color: $buttons;
+					}
+					&:focus{
+   						outline: none;
+					}
+				}
+				#close{
+					float: right;
+				}
+				button{
+					padding: 10px;
+					border-style: none;
+					background: $buttons;
+					@include fonts($roboto,18px, 700, $background);
+					cursor: pointer;
+				}
+				.color{
+					color: #fff !important;
+				}
+				.close{
+					position: relative;
+					top: -1px;
+					left: -30px;
+					font-size: 1.2rem;
+					color: #fff;
+					text-decoration: none;
+					font-family: "Roboto", serif;
+				}
+			}
+		}
+	}
+}

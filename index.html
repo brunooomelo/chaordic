@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Chaordic - Encurtador de links</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/base.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<section class="header">
+		<header>
+			<div class="logo">
+				<img src="img/logo-chaordic.png" alt="">
+			</div>
+			<div class="banner">
+				<div class="banner-wrapper">
+					<h1>Encurte seus links.</h1>
+					<p>Links são longos.Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.</p>
+					<div class="buttons-wrapper">
+						<input type="text" required placeholder="Cole o seu link aqui" id="inputLink">
+						<a href="#" type="reset" onclick="reset()" id="closed" class="close"> x</a>
+						<button onclick="encurtar()" id="encurtador">ENCURTAR</button>
+					</div>
+				</div>
+			</div>
+		</header>
+	</section>
+	<section class="container">
+		<div class="wrapper">
+			<h1 class="title">TOP 5</h1>
+			<ul id="list-topfive">
+			</ul>
+		</div>
+	</section>
+	<section class="hit-box">
+		<div class="wrapper">
+			<h1 class="title">HITS</h1>
+			<div class="box-click">
+				<label>35.568.541</label>
+				<p>Cliques em links</p>
+			</div>
+		</div>
+	</section>
+	<section class="footer">
+		<footer class="wrapper">
+			<span>chr.dc</span>
+			<div class="media-social">
+				<a href="#twitter"><img src="img/icon-twitter.png" alt="" class="icone"></a>
+				<a href="#facebook"><img src="img/icon-facebook.png" alt="" class="icone"></a>
+			</div>
+		</footer>
+	</section>
+	<script src="js/script.js"></script>
+</body>
+</html>

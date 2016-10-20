@@ -1,0 +1,18 @@
+@import 'mixins';
+@import 'variables';
+
+.footer{
+	width: 100%;
+	padding: 10px;
+	span{
+		@include fonts($roboto, 20px, 500, $primary);
+		float: left;
+	}
+	.media-social{
+		float: right;
+		a{
+			margin: 2px;
+		}
+	}
+}
+
